@@ -11,14 +11,11 @@ try:
         hourlyRate = float(hourlyRate)
 
         # Calculate gross pay
-        grossPay = weeklyHours * hourlyRate
+        grossPay = round(weeklyHours * hourlyRate,2)
 
         # If user worked more than 40 hours in the week, calculate overtime pay
         if weeklyHours > 40:
-            grossPay = (hourlyRate * 40) + (weeklyHours - 40) * (hourlyRate * 1.5)
-
-            # Round pay
-            grossPay = round(grossPay, 2)
+            grossPay = round((hourlyRate * 40) + (weeklyHours - 40) * (hourlyRate * 1.5),2)
 
             # Print gross pay
             print("Your gross pay is: $" + str(grossPay) + ". This includes $" + str(grossPay) + " of overtime pay.")
