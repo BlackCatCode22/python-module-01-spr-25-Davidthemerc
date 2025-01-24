@@ -21,16 +21,21 @@ try:
             grossPay += overPay
             overPay = str(overPay)
 
-        # Round pay
-        grossPay = round(grossPay, 2)
+            # Round pay
+            grossPay = round(grossPay, 2)
 
-        # Stringify gross pay
-        grossPay = str(grossPay)
+            # Stringify gross pay
+            grossPay = str(grossPay)
 
-        # Print gross pay
-        if weeklyHours > 40:
+            # Print gross pay
             print("Your gross pay is: $" + grossPay + ". This includes $" + overPay + " of overtime pay.")
+
         else:
+
+            # Stringify gross pay
+            grossPay = str(grossPay)
+
+            # Print gross pay (no overtime)
             print("Your gross pay is: $" + grossPay)
 
     except:
