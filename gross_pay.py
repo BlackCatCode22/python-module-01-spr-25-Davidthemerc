@@ -18,7 +18,7 @@ try:
             grossPay = round((hourlyRate * 40) + (weeklyHours - 40) * (hourlyRate * 1.5),2)
 
             # Print gross pay
-            print("Your gross pay is: $" + str(grossPay) + ". This includes $" + str(grossPay) + " of overtime pay.")
+            print("Your gross pay is: $" + str(grossPay) + ", including overtime.")
 
         else:
             # Print gross pay (no overtime)
