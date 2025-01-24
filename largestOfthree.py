@@ -1,6 +1,6 @@
-firstInteger = input("Enter the first integer: ")
-secondInteger = input("Enter the second integer: ")
-thirdInteger = input("Enter the third integer: ")
+firstInteger = int(input("Enter the first integer: "))
+secondInteger = int(input("Enter the second integer: "))
+thirdInteger = int(input("Enter the third integer: "))
 
 if firstInteger>secondInteger:
 
@@ -8,9 +8,8 @@ if firstInteger>secondInteger:
         print(firstInteger)
     else:
         print(thirdInteger)
-
 else:
     if secondInteger>thirdInteger:
         print(secondInteger)
-
-print(thirdInteger)
+    else:
+        print(thirdInteger)
