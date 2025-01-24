@@ -5,11 +5,11 @@ thirdInteger = int(input("Enter the third integer: "))
 if firstInteger>secondInteger:
 
     if firstInteger>thirdInteger:
-        print(firstInteger)
+        print("Largest Integer (First): " + str(firstInteger))
     else:
-        print(thirdInteger)
+        print("Largest Integer (Third): " + str(thirdInteger))
 else:
     if secondInteger>thirdInteger:
-        print(secondInteger)
+        print("Largest Integer (Second): " + str(secondInteger))
     else:
-        print(thirdInteger)
+        print("Largest Integer (Third): " + str(thirdInteger))
