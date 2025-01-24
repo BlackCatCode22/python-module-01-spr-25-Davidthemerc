@@ -15,28 +15,17 @@ try:
 
         # If user worked more than 40 hours in the week, calculate overtime pay
         if weeklyHours > 40:
-            grossPay = hourlyRate * 40
-            overHours = weeklyHours - 40
-            overPay = overHours * (hourlyRate * 1.5)
-            grossPay += overPay
-            overPay = str(overPay)
+            grossPay = (hourlyRate * 40) + (weeklyHours - 40) * (hourlyRate * 1.5)
 
             # Round pay
             grossPay = round(grossPay, 2)
 
-            # Stringify gross pay
-            grossPay = str(grossPay)
-
             # Print gross pay
-            print("Your gross pay is: $" + grossPay + ". This includes $" + overPay + " of overtime pay.")
+            print("Your gross pay is: $" + str(grossPay) + ". This includes $" + str(grossPay) + " of overtime pay.")
 
         else:
-
-            # Stringify gross pay
-            grossPay = str(grossPay)
-
             # Print gross pay (no overtime)
-            print("Your gross pay is: $" + grossPay)
+            print("Your gross pay is: $" + str(grossPay))
 
     except:
         print("Please enter numbers only.")
